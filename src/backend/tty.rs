@@ -1863,6 +1863,7 @@ impl Tty {
                 return rv;
             }
         };
+        surface.compositor.reset_buffer_ages();
 
         // Render the elements.
         let mut elements =
