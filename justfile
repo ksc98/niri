@@ -1,2 +1,2 @@
 install:
-    sudo cargo install --force --path . --root /usr
+    sudo cargo build --release && mv target/release/niri /usr/bin/niri
